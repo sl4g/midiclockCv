@@ -1,5 +1,24 @@
+
+/*
+ * MidiSequencerGate v1
+ * 
+ *
+ * Este sketch esta realizado a partir de las siguientes fuentes:
+ * https://little-scale.blogspot.com/2008/05/how-to-deal-with-midi-clock-signals-in.html
+ * chemiker1981.blogspot.com/2010/10/1-reading-midi-clock-to-read-midi-clock.html
+ * y algunos ejeplos basicos de arduinos
+ * 
+ * ¿Que hace? a partir del optocoplador fijado en D0 (RX) arduino es capaz de leer señales MIDI externas
+ * la señal relacionada con la continuidad del reloj es aislada y utilizada como medida para sincronizar aparatos a traves 
+ * de una muy sucia salida de "gate" (la que esta en formato de output) en este sketch. Externamente se utiliza esta señal como clock para 
+ * dos 4017 que constituyen el secuenciador. Posee además un "clock" interno al que se puede cambiar con un switch SPDT conectado a D3
+ *  = )
+
+
+*/
+
 // Declaration of Varialbes
-//este funciona con cuatro salidas, dos van a secuenciadores y dos son clock puro
+//funciona con cuatro salidas, dos van a secuenciadores y dos son clock puro
 
 byte midi_start = 0xfa;
 byte midi_stop = 0xfc;
