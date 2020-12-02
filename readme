@@ -1,0 +1,2 @@
+Este codigo esta hecho para tomar el clock externo de un dispositivo midi y transformarlo en pulsos gate para dispositivos (sintetizadores) diy analogos. 
+Posee además un reloj interno y dos secuenciadores 4017, uno controlado por switchs y otro por potenciometros. 
